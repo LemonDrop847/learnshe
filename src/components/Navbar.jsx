@@ -4,9 +4,11 @@ import { useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
+import Welco from "./Welco";
 
 const Navbar = () => {
-  const [isLogin, setLogin] = useState(true);
+  const [isLogin, setLogin] = useState(false);
+  const [userName, setName] = useState("");
   const auth = getAuth();
   onAuthStateChanged(auth, async (user) => {
     if (user) {
@@ -15,14 +17,16 @@ const Navbar = () => {
       if (docSnap.exists()) {
         const namex = docSnap.data().name;
         console.log(namex);
-        setLogin(namex);
+        setName(namex);
+        setLogin(true);
       } else {
         // doc.data() will be undefined in this case
         console.log("No username!");
-        setLogin('YOU');
+        setName('YOU');
+        setLogin(true);
       }
     } else {
-      setLogin(null);
+      setName(null);
     }
   });
   return (
@@ -50,34 +54,36 @@ const Navbar = () => {
                 style={{
                   width: "50px",
                   height: "50px",
-                  margin: "50px",
+                  margin: "50px 0 50px 50px",
                   cursor: "pointer",
                 }}
               />
+            </div>
+            <div className="col-1">
+                <button className="btn btn-danger" style={{
+                    margin: "50px 50px 50px",
+                    width: "80px"
+                }}>Sign Out</button>
             </div>
           </div>
           <div className="row navs">
             <div className="col-1">
               <Link className="links" to="/">
-                {" "}
                 Home
               </Link>
             </div>
             <div className="col-1">
               <Link className="links" to="/Services">
-                {" "}
                 Services
               </Link>
             </div>
             <div className="col-1">
               <Link className="links" to="/Jobs">
-                {" "}
                 Jobs
               </Link>
             </div>
             <div className="col-1">
               <Link className="links" to="/Recruiters">
-                {" "}
                 Recruiters
               </Link>
             </div>
@@ -99,6 +105,7 @@ const Navbar = () => {
         </div>
       </div>
       {!isLogin && <Extra />}
+      {isLogin && <Welco name={userName}/>}
     </nav>
   );
 };
