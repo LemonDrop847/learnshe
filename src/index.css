@@ -50,6 +50,14 @@ code {
   padding: 2rem;
   margin: 30px;
 }
+.welcome{
+  text-align: left;
+  font-size: large;
+  font-weight: 500;
+  width: 100%;
+  padding: 2rem;
+  margin: 30px;
+}
 .buddhi{
   box-sizing: border-box;
   margin: 0 auto;
