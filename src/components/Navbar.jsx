@@ -4,10 +4,14 @@ import { useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 const Navbar = () => {
   const [isLogin, setLogin] = useState(true);
+  const [userName, setName] = useState('');
   const auth = getAuth();
   onAuthStateChanged(auth, (user) => {
     if (user) {
       setLogin(user);
+      console.log(user);
+      console.log(user.name);
+      setName(user.name);
     } else {
       setLogin(null);
     }
@@ -52,19 +56,16 @@ const Navbar = () => {
             </div>
             <div className="col-1">
               <Link className="links" to="/Services">
-                {" "}
                 Services
               </Link>
             </div>
             <div className="col-1">
               <Link className="links" to="/Jobs">
-                {" "}
                 Jobs
               </Link>
             </div>
             <div className="col-1">
               <Link className="links" to="/Recruiters">
-                {" "}
                 Recruiters
               </Link>
             </div>
@@ -86,6 +87,7 @@ const Navbar = () => {
         </div>
       </div>
       {!isLogin && <Extra />}
+      
     </nav>
   );
 };
