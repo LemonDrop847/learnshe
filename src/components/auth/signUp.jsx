@@ -13,9 +13,10 @@ const SignUp = () => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
+        const skillArr = skill.split(",");
         setDoc(doc(db, "users", email), {
           name: name,
-          skills: skill,
+          skills: skillArr,
           email: email
         });
         console.log('added email: '+email);
