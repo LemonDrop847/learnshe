@@ -7,6 +7,7 @@ import AuthDetails from './components/auth/authDetails';
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Foot from './components/Foot';
 function App() {
     return(
       <Router>
@@ -25,6 +26,7 @@ function App() {
               </Route>
             </Switch>
           </div>
+          <Foot />
           {/* <SignIn />
           <SignUp />
           <AuthDetails /> */}

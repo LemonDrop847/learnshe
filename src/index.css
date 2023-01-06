@@ -51,8 +51,10 @@ code {
   margin: 30px;
 }
 .buddhi{
+  box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
+  height: 450px;
 }
 #buddhi{
   float: left;
@@ -63,12 +65,33 @@ code {
   /* background-color: rgba(173, 216, 230, 0); */
   padding: 1em;
 }
+#buddhi1{
+  float: right;
+  width: 337px;
+  margin-right: 75px;
+  height: 428px;
+  border-radius: 45px;
+  /* background-color: rgba(173, 216, 230, 0); */
+  padding: 1em;
+}
 .special{
   background-color: #ca6d6d84;
   height: 100px;
   text-align: left;
-  /* padding: 15px; */
+  font-family: "DM Serif Display";
+  padding: 25px;
   color: rgb(0, 0, 0);
+}
+.footer{
+  background-color: #333;
+  overflow: hidden;
+}
+.flink{
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  float: left;
+  color: white;
 }
 /* #extra{
   width: 5rem;
