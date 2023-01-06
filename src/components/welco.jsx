@@ -12,14 +12,14 @@ const Welco = (props) => {
       };
     return ( 
         <div className="welcome panel">
-            <p>Welcome User! {name}</p>
-            <div className="col-1">
-        <button className="btn btn-danger" style={{
-            margin: "50px 50px 50px",
-            width: "80px"
-         }} onClick={userSignOut}>Sign Out
-        </button>
-    </div>
+            <button className="btn btn-danger" style={{
+                width: "100px",
+                float: "right"
+            }} onClick={userSignOut}>Sign Out
+            </button>
+            <p style={{
+                textAlign: "left"
+            }}>Welcome User! {name}</p>
         </div>
         
      );
