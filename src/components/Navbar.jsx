@@ -59,12 +59,7 @@ const Navbar = () => {
                 }}
               />
             </div>
-            <div className="col-1">
-                <button className="btn btn-danger" style={{
-                    margin: "50px 50px 50px",
-                    width: "80px"
-                }}>Sign Out</button>
-            </div>
+            
           </div>
           <div className="row navs">
             <div className="col-1">
