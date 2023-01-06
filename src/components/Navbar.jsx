@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import Extra from "./extra";
 import { useState } from "react";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { getAuth, onAuthStateChanged , signOut } from "firebase/auth";
 import { db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
-import Welco from "./Welco";
+import Welco from "./welco";
 
 const Navbar = () => {
   const [isLogin, setLogin] = useState(false);
@@ -28,6 +28,14 @@ const Navbar = () => {
       setName(null);
     }
   });
+  const userSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        console.log("sign out successful");
+      })
+      .catch((error) => console.log(error));
+  };
+
   return (
     <nav className="navbar">
       <div className="site-name panel">
@@ -62,7 +70,8 @@ const Navbar = () => {
                 <button className="btn btn-danger" style={{
                     margin: "50px 50px 50px",
                     width: "80px"
-                }}>Sign Out</button>
+                 }} onClick={userSignOut}>Sign Out
+                </button>
             </div>
           </div>
           <div className="row navs">
