@@ -2,12 +2,25 @@ import { Link } from "react-router-dom";
 import Extra from "./extra";
 import { useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { db } from "./firebase";
+import { doc, getDoc } from "firebase/firestore";
+
 const Navbar = () => {
   const [isLogin, setLogin] = useState(true);
   const auth = getAuth();
-  onAuthStateChanged(auth, (user) => {
+  onAuthStateChanged(auth, async (user) => {
     if (user) {
-      setLogin(user);
+      const docRef = doc(db, "users", user.email);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        const namex = docSnap.data().name;
+        console.log(namex);
+        setLogin(namex);
+      } else {
+        // doc.data() will be undefined in this case
+        console.log("No username!");
+        setLogin('YOU');
+      }
     } else {
       setLogin(null);
     }
