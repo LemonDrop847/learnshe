@@ -4,7 +4,7 @@ import { useState } from "react";
 import { getAuth, onAuthStateChanged , signOut } from "firebase/auth";
 import { db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
-import Welco from "./welco";
+import Welco from "./Welcome";
 
 const Navbar = () => {
   const [isLogin, setLogin] = useState(false);
@@ -28,13 +28,7 @@ const Navbar = () => {
       setName(null);
     }
   });
-  const userSignOut = () => {
-    signOut(auth)
-      .then(() => {
-        console.log("sign out successful");
-      })
-      .catch((error) => console.log(error));
-  };
+  
 
   return (
     <nav className="navbar">
@@ -66,13 +60,7 @@ const Navbar = () => {
                 }}
               />
             </div>
-            <div className="col-1">
-                <button className="btn btn-danger" style={{
-                    margin: "50px 50px 50px",
-                    width: "80px"
-                 }} onClick={userSignOut}>Sign Out
-                </button>
-            </div>
+            
           </div>
           <div className="row navs">
             <div className="col-1">
