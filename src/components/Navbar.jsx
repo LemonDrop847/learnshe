@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import Extra from "./extra";
 import { useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { db } from "./firebase";
+import { doc, getDoc } from "firebase/firestore";
+
 const Navbar = () => {
   const [isLogin, setLogin] = useState(true);
   const [userName, setName] = useState('');
   const auth = getAuth();
-  onAuthStateChanged(auth, (user) => {
+  onAuthStateChanged(auth, async (user) => {
     if (user) {
       setLogin(user);
-      console.log(user);
-      console.log(user.name);
-      setName(user.name);
     } else {
       setLogin(null);
     }
