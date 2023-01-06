@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quicksand&family=Roboto:wght@300&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +12,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* .container,
+.container-fluid{
+  padding: 2em;
+} */
+#mainh{
+    color: black;
+    font-size:100px;
+    font-family: "DM Serif Display";
+}
+.panel{
+  /* border-radius: 0.3rem; */
+  /* padding: 1rem; */
+  /* margin-bottom: 1rem; */
+  background-color: #ffffffa3;
+  color: #000000;
+}
+.navbar{
+  background-image: url(https://i.postimg.cc/0yzFLShM/pexels-aboodi-vesakaran-12984939.jpg);
+  height: 500px;
+  margin-top: 0;
+}
+.navs{
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+#search{
+  border-radius: 20px;
+}
+.links{
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+.site-name{
+  width: 100%;
+  padding: 2rem;
+  margin: 30px;
+}
+.buddhi{
+  margin: 0 auto;
+  width: 100%;
+}
+#buddhi{
+  float: left;
+  width: 337px;
+  margin-left: 75px;
+  height: 428px;
+  border-radius: 45px;
+  /* background-color: rgba(173, 216, 230, 0); */
+  padding: 1em;
+}
+.special{
+  background-color: #ca6d6d84;
+  height: 100px;
+  text-align: left;
+  /* padding: 15px; */
+  color: rgb(0, 0, 0);
+}
+/* #extra{
+  width: 5rem;
+} */
