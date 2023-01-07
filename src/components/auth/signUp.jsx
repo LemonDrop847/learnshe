@@ -10,6 +10,7 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
 
   const signUp = (e) => {
+    console.log(name+skill+email);
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -36,7 +37,7 @@ const SignUp = () => {
           placeholder="Enter your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-        ></input>
+        />
         <br />
         <label>Email</label>
         <input
@@ -44,7 +45,7 @@ const SignUp = () => {
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        ></input>
+        />
         <br />
         <label>Skills</label>
         <input
@@ -52,7 +53,7 @@ const SignUp = () => {
           placeholder="Enter your skills (separated by commas) "
           value={skill}
           onChange={(e) => setSkill(e.target.value)}
-        ></input>
+        />
         <br />
         <label>Password</label>
         <input
@@ -62,7 +63,7 @@ const SignUp = () => {
           onChange={(e) => setPassword(e.target.value)}
         ></input>
         <br />
-        <button type="submit">Sign Up</button>
+        <button type="submit" onClick={console.log('press')} >Sign Up</button>
       </form>
     </div>
   );
