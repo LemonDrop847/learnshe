@@ -127,10 +127,13 @@ p{
   margin: 40px;
   margin:20px 20px 20px;
   padding: 40px;
+  border-radius: 5px;
+  box-shadow: 2px 3px grey;
   background-color:#ca6d6d84 ;
 }
 .blog ul{
   text-align: left;
+  font-size: 25px;
   padding: 10px;
 }
 .blog h2{

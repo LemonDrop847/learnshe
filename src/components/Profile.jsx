@@ -17,7 +17,7 @@ const Profile = () => {
         setName(docSnap.data().name);
         setEmail(docSnap.data().email);
         setSkill(docSnap.data().skillstring);
-        setSkillarr(docSnap.data().skills)
+        setSkillarr(docSnap.data().skills);
       } else {
         console.log("No data!");
       }
@@ -25,6 +25,7 @@ const Profile = () => {
       setName(null);
     }
   });
+  
   return (
     <div className="profile">
       <div className="special" style={{
@@ -41,6 +42,7 @@ const Profile = () => {
         }}>
             <div className="col-3">
                 <img src="https://i.postimg.cc/JnnsJJxq/user.png" alt="" style={{
+                    padding:"2rem",
                     width:"10rem",
                     height:"10rem",
                     border:"1px solid black",
@@ -57,9 +59,6 @@ const Profile = () => {
                 <h4>
                     Email : {email}
                 </h4>
-                <h4>
-                    Skills : {skills}
-                </h4>
             </div>
             <div className="col-4">
                 <h4>
@@ -74,9 +73,9 @@ const Profile = () => {
                             My Skills
                         </h2>
                         <ul>
-                            <li>xyz</li>
-                            <li>xyz</li>
-                            <li>xyz</li>
+                        {myskills.map((value,index)=>{
+                            return <li>{value}</li>;
+                        })}
                         </ul>
                     </div>
                 </div>
@@ -102,9 +101,9 @@ const Profile = () => {
                             My Interests
                         </h2>
                         <ul>
-                            <li>xyz</li>
-                            <li>xyz</li>
-                            <li>xyz</li>
+                            {myskills.map((value,index)=>{
+                                return <li>{value}</li>;
+                            })}
                         </ul>
                     </div>
                 </div>
