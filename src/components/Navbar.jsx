@@ -60,9 +60,8 @@ const Navbar = () => {
                 }}
               />
             </div>
-            
           </div>
-          <div className="row navs">
+          <div className="row navs ">
             <div className="col-1">
               <Link className="links" to="/">
                 Home
