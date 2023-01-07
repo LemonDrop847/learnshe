@@ -19,7 +19,7 @@ const Home = () => {
             </p>
             <button className="hbutton" style={{
                 color: 'white',
-                backgroundColor:"#CA6D6D",
+                backgroundColor:"#ca6d6dc8",
                 float: "left",
                 marginLeft: "50px"
             }}>Learn Now</button>
@@ -40,7 +40,7 @@ const Home = () => {
             </p>
             <button className="hbutton" style={{
                 color: "white",
-                backgroundColor:"#CA6D6D",
+                backgroundColor:"#ca6d6dc8",
                 float: "left",
                 marginLeft: "50px"
             }}>Apply Now</button>
