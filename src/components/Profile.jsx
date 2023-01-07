@@ -7,6 +7,7 @@ const Profile = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [skills, setSkill] = useState("");
+  const [myskills, setSkillarr] = useState("");
   const auth = getAuth();
   onAuthStateChanged(auth, async (user) => {
     if (user) {
@@ -16,6 +17,7 @@ const Profile = () => {
         setName(docSnap.data().name);
         setEmail(docSnap.data().email);
         setSkill(docSnap.data().skillstring);
+        setSkillarr(docSnap.data().skills)
       } else {
         console.log("No data!");
       }
@@ -23,7 +25,6 @@ const Profile = () => {
       setName(null);
     }
   });
-  const mySkills=skills.split(',');
   return (
     <div className="profile">
       <div className="special" style={{
