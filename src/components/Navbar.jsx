@@ -4,7 +4,7 @@ import { useState } from "react";
 import { getAuth, onAuthStateChanged} from "firebase/auth";
 import { db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
-import Welco from "./Welco";
+import Welcome from "./Welcome";
 
 const Navbar = () => {
   const [isLogin, setLogin] = useState(false);
@@ -101,7 +101,7 @@ const Navbar = () => {
         </div>
       </div>
       {!isLogin && <Extra />}
-      {isLogin && <Welco name={userName}/>}
+      {isLogin && <Welcome name={userName}/>}
     </nav>
   );
 };

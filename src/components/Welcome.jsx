@@ -1,6 +1,6 @@
 import { getAuth,signOut } from "firebase/auth";
 
-const Welco = (props) => {
+const Welcome = (props) => {
     const name=props.name;
     const auth = getAuth();
     const userSignOut = () => {
@@ -25,4 +25,4 @@ const Welco = (props) => {
      );
 }
  
-export default Welco;
+export default Welcome;
