@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './App.css';
 // import firebase from './components/firebase';
 
@@ -8,6 +8,9 @@ import Home from './components/Home';
 import Foot from './components/Foot';
 
 function App() {
+  useEffect(() => {
+    document.body.style.zoom = "80%";
+  }, []);
     return(
       <Router>
         <div className="App">
