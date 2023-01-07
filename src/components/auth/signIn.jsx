@@ -27,7 +27,7 @@ const SignIn = () => {
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        ></input>
+        />
         <br />
         <label >Password</label>
         <input
@@ -35,7 +35,7 @@ const SignIn = () => {
           placeholder="Enter your password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-        ></input>
+        />
         <br />
         <button type="submit">Log In</button>
       </form>
