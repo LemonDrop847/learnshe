@@ -31,7 +31,7 @@
 .sign-in-container h1{
     text-align: center;
     font-size: 25px;
-    color:#f1356d;
+    color:#B54141;
     margin-bottom: 30px;
 }
 .sign-in-container button{
@@ -52,6 +52,7 @@ button:hover{
 }
 label{
     text-align: left;
+    color: black;
     display: block;
     float: left;
 }
