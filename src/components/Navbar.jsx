@@ -70,8 +70,8 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="col-1">
-              <Link className="links" to="/Services">
-                Services
+              <Link className="links" to="/Learn">
+                Learn
               </Link>
             </div>
             <div className="col-1">
