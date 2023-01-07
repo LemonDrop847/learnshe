@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import Popup from "./PopUp";
 import SignUp from "./auth/signUp";
 import SignIn from "./auth/signIn";
 const Extra = () => {
-  const [buttonPopup,setButtonPopup] = useState(false);
-  const [buttonPopup1,setButtonPopup1] = useState(false);
+  const [buttonPopup, setButtonPopup] = useState(false);
+  const [buttonPopup1, setButtonPopup1] = useState(false);
   return (
     <div className="container">
       <div className="row">
@@ -15,12 +14,15 @@ const Extra = () => {
               <p>Welcome! Are you new here? Create an account</p>
             </div>
             <div className="col">
-              <Link to="/signUp">
-                <button className="btn btn-danger" onClick={()=>setButtonPopup(true)} >Sign Up</button>
-                <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                  <SignUp/>
-                </Popup>
-              </Link>
+              <button
+                className="btn btn-danger"
+                onClick={() => setButtonPopup(true)}
+              >
+                Sign Up
+              </button>
+              <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                <SignUp />
+              </Popup>
             </div>
           </div>
         </div>
@@ -36,12 +38,15 @@ const Extra = () => {
               <p>Already have an account?</p>
             </div>
             <div className="col">
-              <Link to="/login">
-                <button className="btn btn-danger" onClick={()=>setButtonPopup1(true)} >Login</button>
-                <Popup trigger={buttonPopup1} setTrigger={setButtonPopup1}>
-                  <SignIn/>
-                </Popup>
-              </Link>
+              <button
+                className="btn btn-danger"
+                onClick={() => setButtonPopup1(true)}
+              >
+                Login
+              </button>
+              <Popup trigger={buttonPopup1} setTrigger={setButtonPopup1}>
+                <SignIn />
+              </Popup>
             </div>
           </div>
         </div>
