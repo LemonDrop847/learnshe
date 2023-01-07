@@ -8,7 +8,10 @@ import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Foot from './components/Foot';
+import Popup from './components/PopUp';
+import { useState } from 'react';
 function App() {
+  const [buttonPopup,setButtonPopup]=useState(false);
     return(
       <Router>
         <div className="App">
@@ -16,13 +19,13 @@ function App() {
           <div className="content">
             <Switch>
               <Route exact path="/login">
-                <SignIn />
+                <Home/>
               </Route>
               <Route exact path="/">
                 <Home />
               </Route>
               <Route exact path="/signUp">
-                <SignUp />
+                <Home />
               </Route>
             </Switch>
           </div>

@@ -30,30 +30,38 @@ const SignUp = () => {
     <div className="sign-in-container">
       <form onSubmit={signUp}>
         <h1>Create Account</h1>
+        <label >Name</label>
         <input
           type="name"
           placeholder="Enter your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         ></input>
+        <br />
+        <label>Email</label>
         <input
           type="email"
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         ></input>
+        <br />
+        <label>Skills</label>
         <input
           type="skills"
           placeholder="Enter your skills (separated by commas) "
           value={skill}
           onChange={(e) => setSkill(e.target.value)}
         ></input>
+        <br />
+        <label>Password</label>
         <input
           type="password"
           placeholder="Enter your password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         ></input>
+        <br />
         <button type="submit">Sign Up</button>
       </form>
     </div>
