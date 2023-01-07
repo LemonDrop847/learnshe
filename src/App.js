@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Foot from './components/Foot';
 import Profile from './components/Profile';
+import Learn from './components/Learn';
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,9 @@ function App() {
               </Route>
               <Route exact path="/profile">
                 <Profile/>
+              </Route>
+              <Route exact path="/learn">
+                <Learn/>
               </Route>
               <Route exact path="/">
                 <Home />
