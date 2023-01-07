@@ -1,3 +1,15 @@
+# LearnSHE
+
+A web dev project that allows women to learn new skills and showcase them through their work. In addition, it provides a medium for women to work for companies, sell products and earn. 
+
+## Theme
+
+Women empowerment, AI/ML and education.
+
+## Problem Statement
+
+Women's economic development and empowerment has always been a topic of concern. Despite having the potential and skills, they are not getting a platform to show it to the world. There are less opportunities for women in our country where they both learn and earn. Women's self-sustenance has often been obscured and needs to be focused more. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
