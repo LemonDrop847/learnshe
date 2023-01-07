@@ -7,6 +7,7 @@ const Welcome = (props) => {
         signOut(auth)
           .then(() => {
             console.log("sign out successful");
+            window.location.reload(true);
           })
           .catch((error) => console.log(error));
       };
