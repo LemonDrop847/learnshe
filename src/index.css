@@ -114,9 +114,9 @@ p{
   height: 40px;
   border: none;
 }
-.hbutton :hover{
-  background-color: #8d6060;
-}
+/* .hbutton button:hover{
+  background-color: #ca6d6dfd; 
+} */
 
 /* #extra{
   width: 5rem;

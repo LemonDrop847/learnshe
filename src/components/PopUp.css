@@ -15,7 +15,7 @@
     width: 100%;
     max-width: 700px;
     border-radius: 16px;
-    background-color: #fff;
+    background-color: rgb(244, 222, 222);
 }
 .popup-inner .close-btn{
     border: none;
@@ -28,19 +28,27 @@
     margin: 0 auto;
     text-align: center;
 }
-.sign-in-container h2{
-    font-size: 20px;
+.sign-in-container h1{
+    text-align: center;
+    font-size: 25px;
     color:#f1356d;
     margin-bottom: 30px;
 }
 .sign-in-container button{
-    background-color: #f1356d;
+    background-color: #ca6d6dc8;
     color: #fff;
     border: 0;
     padding: 8px;
     border-radius: 8px;
     cursor: pointer;
   
+}
+button{
+    box-shadow: 2px 2px rgb(151, 149, 149);
+}
+button:hover{
+    background-color: #ca6d6dfd; 
+    /* border-radius: 10px; */
 }
 label{
     text-align: left;
