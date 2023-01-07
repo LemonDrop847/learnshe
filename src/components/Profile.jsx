@@ -9,10 +9,10 @@ const Profile = () => {
   const [skills, setSkill] = useState("");
   const [myskills, setSkillarr] = useState("");
   const auth = getAuth();
-  onAuthStateChanged(auth, async (user) => {
+  onAuthStateChanged(auth, (user) => {
     if (user) {
       const docRef = doc(db, "users", user.email);
-      const docSnap = await getDoc(docRef);
+      const docSnap = getDoc(docRef);
       if (docSnap.exists()) {
         setName(docSnap.data().name);
         setEmail(docSnap.data().email);

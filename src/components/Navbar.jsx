@@ -10,10 +10,10 @@ const Navbar = () => {
   const [isLogin, setLogin] = useState(false);
   const [userName, setName] = useState("");
   const auth = getAuth();
-  onAuthStateChanged(auth, async (user) => {
+  onAuthStateChanged(auth, (user) => {
     if (user) {
       const docRef = doc(db, "users", user.email);
-      const docSnap = await getDoc(docRef);
+      const docSnap = getDoc(docRef);
       if (docSnap.exists()) {
         const namex = docSnap.data().name;
         console.log(namex);
