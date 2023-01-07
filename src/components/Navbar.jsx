@@ -49,7 +49,7 @@ const Navbar = () => {
               <h1 id="mainh">LearnShe</h1>
             </div>
             <div className="col-1">
-            <Link to="/profile">
+            {isLogin && <Link to="/profile">
               <img
                 src="https://i.postimg.cc/JnnsJJxq/user.png"
                 alt=""
@@ -60,7 +60,7 @@ const Navbar = () => {
                   cursor: "pointer",
                 }}
               />
-            </Link>
+            </Link>}
             </div>
           </div>
           <div className="row navs ">
