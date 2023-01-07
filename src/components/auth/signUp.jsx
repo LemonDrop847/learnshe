@@ -18,7 +18,8 @@ const SignUp = () => {
         setDoc(doc(db, "users", email), {
           name: name,
           skills: skillArr,
-          email: email
+          email: email,
+          skillstring: skill,
         });
         console.log('added email: '+email);
       })
