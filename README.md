@@ -8,7 +8,18 @@ Women empowerment, AI/ML and education.
 
 ## Problem Statement
 
-Women's economic development and empowerment has always been a topic of concern. Despite having the potential and skills, they are not getting a platform to show it to the world. There are less opportunities for women in our country where they both learn and earn. Women's self-sustenance has often been obscured and needs to be focused more. 
+Women's economic development and empowerment have always been a topic of concern. Despite having the potential and skills, they are not getting a platform to show it to the world. There are less opportunities for women in our country where they both learn and earn. Women's self-sustenance has often been obscured and needs to be focused on more. 
+
+## Objective
+
+This project aims to:
+* Provide a collection of data regarding the skills that users have mentioned.
+* To suggest skill lessons according to users' field of interest using AI/ML.
+* Also provides a set of materials needed for learning a particular skill.
+
+## Proposed Solution
+
+## Proposed TechStack
 
 # Getting Started with Create React App
 
