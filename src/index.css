@@ -129,7 +129,7 @@ p{
   margin: 40px;
   margin:20px 20px 20px;
   padding: 40px;
-  background-color:#ca6d6d84 ;
+  background-color:#da8e8e84 ;
 }
 .blog ul{
   text-align: left;
@@ -146,7 +146,7 @@ p{
   border-radius: 20px;
   max-width: 1000px;
   padding:2rem;
-  background-color: #ca6d6d49;
+  background-color: #f9767649;
   margin-bottom:5rem;
   border-bottom:1px solid #fafafa;
   text-align: left;
@@ -158,7 +158,7 @@ p{
 }
 .blog-preview h2{
    font-size: 20px;
-   color:#ca6d6d;
+   color:#e86363;
    margin-bottom: 8px;
 }
 .blog-preview a{
@@ -181,7 +181,7 @@ button:hover{
   /* border-radius: 10px; */
 }
 .blog-list{
-  background-color: #d6bfbf;
+  background-color: #f9d0d0;
 }
 /* .hbutton button:hover{
   background-color: #ca6d6dfd; 

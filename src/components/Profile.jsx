@@ -77,7 +77,7 @@ const Profile = () => {
             <h2>Name : {name}</h2>
             <br />
             <h4>Email : {email}</h4>
-            <h4>Skills : {skills}</h4>
+            {/* <h4>Skills : {skills}</h4> */}
           </div>
           <div className="col-4">
             <h4>Contact No :</h4>
@@ -88,9 +88,8 @@ const Profile = () => {
             <div className="blog">
               <h2>My Skills</h2>
               <ul>
-                <li>xyz</li>
-                <li>xyz</li>
-                <li>xyz</li>
+                {myskills.map((value)=>{
+                  return <li>{value}</li>})}
               </ul>
             </div>
           </div>
@@ -115,9 +114,8 @@ const Profile = () => {
             <div className="blog">
               <h2>My Interests</h2>
               <ul>
-                <li>xyz</li>
-                <li>xyz</li>
-                <li>xyz</li>
+              {myskills.map((value)=>{
+                  return <li>{value}</li>})}
               </ul>
             </div>
           </div>
