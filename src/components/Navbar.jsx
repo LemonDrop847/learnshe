@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Extra from "./extra";
-import { useState } from "react";
-import { getAuth, onAuthStateChanged} from "firebase/auth";
+import { useEffect, useState } from "react";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
 import Welcome from "./Welcome";
@@ -9,28 +9,31 @@ import Welcome from "./Welcome";
 const Navbar = () => {
   const [isLogin, setLogin] = useState(false);
   const [userName, setName] = useState("");
-  const auth = getAuth();
-  onAuthStateChanged(auth, async (user) => {
-    
-    if (user) {
-      console.log('hello');
-      const docRef = doc(db, "users", user.email);
-      const docSnap = await getDoc(docRef);
-      if (docSnap.exists()) {
-        const namex = docSnap.data().name;
-        console.log(namex);
-        setName(namex);
-        setLogin(true);
+  const getUser = () => {
+    const auth = getAuth();
+    onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        console.log("hello");
+        const docRef = doc(db, "users", user.email);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          const namex = docSnap.data().name;
+          console.log(namex);
+          setName(namex);
+          setLogin(true);
+        } else {
+          console.log("No username!");
+          setName("YOU");
+          setLogin(true);
+        }
       } else {
-        console.log("No username!");
-        setName('YOU');
-        setLogin(true);
+        setName(null);
       }
-    } else {
-      setName(null);
-    }
+    });
+  };
+  useEffect(() => {
+    getUser();
   });
-  
 
   return (
     <nav className="navbar">
@@ -51,18 +54,20 @@ const Navbar = () => {
               <h1 id="mainh">LearnShe</h1>
             </div>
             <div className="col-1">
-            {isLogin && <Link to="/profile">
-              <img
-                src="https://i.postimg.cc/JnnsJJxq/user.png"
-                alt=""
-                style={{
-                  width: "50px",
-                  height: "50px",
-                  margin: "50px 0 50px 50px",
-                  cursor: "pointer",
-                }}
-              />
-            </Link>}
+              {isLogin && (
+                <Link to="/profile">
+                  <img
+                    src="https://i.postimg.cc/JnnsJJxq/user.png"
+                    alt=""
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      margin: "50px 0 50px 50px",
+                      cursor: "pointer",
+                    }}
+                  />
+                </Link>
+              )}
             </div>
           </div>
           <div className="row navs ">
@@ -104,7 +109,7 @@ const Navbar = () => {
         </div>
       </div>
       {!isLogin && <Extra />}
-      {isLogin && <Welcome name={userName}/>}
+      {isLogin && <Welcome name={userName} />}
     </nav>
   );
 };
