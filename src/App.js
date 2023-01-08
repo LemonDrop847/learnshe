@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Foot from './components/Foot';
 import Profile from './components/Profile';
 import Learn from './components/Learn';
+import Jobs from './components/Jobs';
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,9 @@ function App() {
             <Switch>
               <Route exact path="/login">
                 <Home/>
+              </Route>
+              <Route exact path="/jobs">
+                <Jobs/>
               </Route>
               <Route exact path="/learn">
                 <Learn/>
