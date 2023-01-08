@@ -17,7 +17,7 @@ const Profile = () => {
         setName(docSnap.data().name);
         setEmail(docSnap.data().email);
         setSkill(docSnap.data().skillstring);
-        setSkillarr(docSnap.data().skills)
+        setSkillarr(docSnap.data().skills);
       } else {
         console.log("No data!");
       }
