@@ -22,6 +22,16 @@ This project aims to:
 
 ## Proposed TechStack
 
+<ul>
+<li>React.js</li>
+<li>TensorFlow</li>
+<li>Firebase</li>
+<li>Javascript</li>
+<li>Bootstrap</li>
+<li>Keras</li>
+<li>JSON</li>
+</ul>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
