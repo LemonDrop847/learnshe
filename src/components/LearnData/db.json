@@ -4,8 +4,7 @@
       "id": 1,
       "title": "Painting For Beginners/ Easy Tips and Tricks of Blending Colours",
       "description": "If you're pursuing a career as a painter, it's important to build a skill set with the abilities you need to perform your job duties so you can find employment and be successful. With painting skills, you can pursue an art career or a career in home renovations or building. Learning about the skills painters have can help you begin to develop necessary skills.",
-      "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7whhcFfz51Q\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
-      "Skill": "Painting",
+      "iframe": "https://www.youtube.com/embed/7whhcFfz51Q",
       "Document": "https://www.indeed.com/career-advice/resumes-cover-letters/painting-skills",
       "author": "typicode"
     },
@@ -13,7 +12,7 @@
       "id": 2,
       "title": "HTML Tutorial for Beginners: HTML Crash Course",
       "description": "This HTML tutorial is designed for the aspiring Web Designers and Developers with a need to understand the HTML in enough detail along with its simple overview, and practical examples. This tutorial will give you enough ingredients to start with HTML from where you can take yourself at higher level of expertise.",
-      "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qz0aGYrrlhU\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+      "iframe": "https://www.youtube.com/embed/qz0aGYrrlhU",
       "Skill": "HTML",
       "Document": "https://www.tutorialspoint.com/html/html_tutorial.pdf",
       "author": "typicode"
@@ -22,16 +21,25 @@
       "id": 3,
       "title": "Digital Marketing Course Part - 1 | Digital Marketing Tutorial For Beginners",
       "description": "This Digital Marketing Course video is the first part of a series that will have everything you need to know about Digital Marketing. This video covers a wide range of topics like Digital Marketing basics, Best Digital Marketing tools, search engine optimization, SEO tips and tricks, keyword research, how to rank 1 on Google, and Google tag manager.",
-      "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/nU-IIXBWlS4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
-      "Skill": "Marketing",
-      "Document": "https://www.tutorialspoint.com/marketing_management/marketing_management_tutorial.pdf",
+      "iframe": "https://www.youtube.com/embed/nU-IIXBWlS4",
+      "Skill": "Illustration",
+      "Document": "https://www.pgsd.org/cms/lib07/PA01916597/Centricity/Domain/202/illustrator_for_beginners_tastytuts.pdf",
+      "author": "typicode"
+    },
+    {
+      "id": 5,
+      "title": "Project Management Full Course In 8 Hours | Project Management Training",
+      "description": "In this video on Project Management Full Course, we shall begin learning the basics of project management. As we move forward, we shall verse ourselves with different project management concepts like project planning, project time, cost quality and communication management. We will learn about project manager roles and different project management tools. Finally, we shall see some Project Management interview questions to excel in any Project Management interview.",
+      "iframe": "https://www.youtube.com/embed/uWPIsaYpY7U",
+      "Skill": "Project management",
+      "Document": "https://ocw.mit.edu/courses/2-000-how-and-why-machines-work-spring-2002/b1f68e2edda6aa1409aeb2d88efd8246_management.pdf",
       "author": "typicode"
     },
     {
       "id": 4,
-      "title": "Digital Marketing Course Part - 1 | Digital Marketing Tutorial For Beginners",
-      "description": "This Digital Marketing Course video is the first part of a series that will have everything you need to know about Digital Marketing. This video covers a wide range of topics like Digital Marketing basics, Best Digital Marketing tools, search engine optimization, SEO tips and tricks, keyword research, how to rank 1 on Google, and Google tag manager.",
-      "iframe": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/nU-IIXBWlS4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+      "title": "Adobe Illustrator for Beginners",
+      "description": "This free Adobe Illustrator course is aimed at helping beginners learn how to use Adobe Illustrator easily and quickly. You don’t need any previous knowledge of the software, and you don’t need design or illustration skills. We’ll start right at the beginning and work our way through each topic step by step.",
+      "iframe": "https://www.youtube.com/embed/Ib8UBwu3yGA",
       "Skill": "Marketing",
       "Document": "https://www.tutorialspoint.com/marketing_management/marketing_management_tutorial.pdf",
       "author": "typicode"
