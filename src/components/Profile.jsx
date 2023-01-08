@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { db } from "./firebase";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { render } from "@testing-library/react";
 const Profile = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,7 +12,7 @@ const Profile = () => {
   const getUser = () => {
     const auth = getAuth();
     onAuthStateChanged(auth, async (user) => {
-      console.log('running');
+      console.log("running");
       if (user) {
         const docRef = doc(db, "users", user.email);
         const docSnap = await getDoc(docRef);
@@ -27,7 +28,9 @@ const Profile = () => {
         setName(null);
       }
     });
-  }
+  };
+  const val=skills.split(',');
+
   useEffect(() => {
     getUser();
   }, []);
@@ -88,7 +91,7 @@ const Profile = () => {
             <div className="blog">
               <h2>My Skills</h2>
               <ul>
-                {myskills.map((value)=>{
+                {val.map((value)=>{
                   return <li>{value}</li>})}
               </ul>
             </div>
@@ -114,7 +117,7 @@ const Profile = () => {
             <div className="blog">
               <h2>My Interests</h2>
               <ul>
-              {myskills.map((value)=>{
+                {val.map((value)=>{
                   return <li>{value}</li>})}
               </ul>
             </div>
