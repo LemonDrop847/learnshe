@@ -1,14 +1,12 @@
-import { Link } from "react-router-dom";
 import { db } from "./firebase";
 import { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { render } from "@testing-library/react";
+
 const Profile = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [skills, setSkill] = useState("");
-  const [myskills, setSkillarr] = useState("");
   const getUser = () => {
     const auth = getAuth();
     onAuthStateChanged(auth, async (user) => {
@@ -20,7 +18,6 @@ const Profile = () => {
           setName(docSnap.data().name);
           setEmail(docSnap.data().email);
           setSkill(docSnap.data().skillstring);
-          setSkillarr(docSnap.data().skills);
         } else {
           console.log("No data!");
         }
