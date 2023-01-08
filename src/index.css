@@ -136,14 +136,23 @@ p{
 .blog h2{
   color: #ca6d6d;
 }
+.blog-preview iframe{
+  float: left;
+  margin: 2rem;
+}
 .blog-preview{
-  width: "100%";
+  border-radius: 20px;
+  max-width: 1000px;
   padding:2rem;
-  margin:20px 0;
+  background-color: #ca6d6d49;
+  margin-bottom:5rem;
   border-bottom:1px solid #fafafa;
+  text-align: left;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 .blog-preview:hover{
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 3px 5px 5px rgba(0,0,0,0.1);
 }
 .blog-preview h2{
    font-size: 20px;
@@ -152,6 +161,25 @@ p{
 }
 .blog-preview a{
   text-decoration: none;
+}
+button{
+  background-color: #ca6d6dc8;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+button{
+  box-shadow: 2px 2px rgb(151, 149, 149);
+}
+button:hover{
+  background-color: #ca6d6dfd; 
+  /* border-radius: 10px; */
+}
+.blog-list{
+  background-color: #d6bfbf;
 }
 /* .hbutton button:hover{
   background-color: #ca6d6dfd; 
