@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/learnshe/static/css/main.b49e4ef2.css",
+    "main.js": "/learnshe/static/js/main.cae9d9a9.js",
+    "static/js/787.cb8c333f.chunk.js": "/learnshe/static/js/787.cb8c333f.chunk.js",
+    "index.html": "/learnshe/index.html",
+    "main.b49e4ef2.css.map": "/learnshe/static/css/main.b49e4ef2.css.map",
+    "main.cae9d9a9.js.map": "/learnshe/static/js/main.cae9d9a9.js.map",
+    "787.cb8c333f.chunk.js.map": "/learnshe/static/js/787.cb8c333f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b49e4ef2.css",
+    "static/js/main.cae9d9a9.js"
+  ]
+}
