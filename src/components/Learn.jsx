@@ -5,11 +5,11 @@ const Learn = () => {
     const myskills='HTML,CSS';
     async function makePrediction() {
         // Send the request
+        console.log('sending');
         const response = await fetch('http://LemonDrop47.pythonanywhere.com/predict', {
           method: 'POST',
           body: myskills,
         });
-    
         // Get the response text
         const prediction = await response.text();
     
