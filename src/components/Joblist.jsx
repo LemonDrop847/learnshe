@@ -16,6 +16,8 @@ const JobList = (props) => {
                             <h2>{blog.Jobs}</h2>
                             <p>Skills {blog.Skills} </p>
                             <p>{blog.Description}</p>
+                            <br />
+                            <p>{blog.dates}</p>
                             <button>Apply</button>
                         </div>
                     </div>

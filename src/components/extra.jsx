@@ -7,24 +7,25 @@ const Extra = () => {
   const [buttonPopup1, setButtonPopup1] = useState(false);
   return (
     <div className="container">
-      <div className="row">
+      <div className="row" style={{
+        marginTop:"10px"
+      }}>
         <div className="col m-15 p-3 panel" id="extra">
-          <div className="row">
-            <div className="col">
-              <p>Welcome! Are you new here? Create an account</p>
-            </div>
-            <div className="col">
               <button
                 className="btn btn-danger"
                 onClick={() => setButtonPopup(true)}
+                style={{
+                  float: 'right'
+                }}
               >
                 Sign Up
               </button>
               <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <SignUp />
               </Popup>
-            </div>
-          </div>
+              <p style={{
+                textAlign: 'left'
+              }}>Welcome! Are you new here? Create an account</p>
         </div>
         <div
           className="col offset-4 m-15 p-3 panel"
@@ -33,21 +34,22 @@ const Extra = () => {
             width: "900px",
           }}
         >
-          <div className="row">
-            <div className="col">
-              <p>Already have an account?</p>
-            </div>
-            <div className="col">
+          <div className="col">
               <button
                 className="btn btn-danger"
                 onClick={() => setButtonPopup1(true)}
-              >
+              style={{
+                float: 'right',
+                maxWidth:"100px"
+              }}>
                 Login
               </button>
               <Popup trigger={buttonPopup1} setTrigger={setButtonPopup1}>
                 <SignIn />
               </Popup>
-            </div>
+              <p style={{
+                textAlign: 'left'
+              }}>Already have an account?</p>
           </div>
         </div>
       </div>
