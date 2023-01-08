@@ -8,16 +8,21 @@ const Profile = () => {
   const [email, setEmail] = useState("");
   const [skills, setSkill] = useState("");
   const [myskills, setSkillarr] = useState("");
-  const auth = getAuth();
-  onAuthStateChanged(auth, async (user) => {
-    if (user) {
-      const docRef = doc(db, "users", user.email);
-      const docSnap = await getDoc(docRef);
-      if (docSnap.exists()) {
-        setName(docSnap.data().name);
-        setEmail(docSnap.data().email);
-        setSkill(docSnap.data().skillstring);
-        setSkillarr(docSnap.data().skills)
+  const getUser = () => {
+    const auth = getAuth();
+    onAuthStateChanged(auth, async (user) => {
+      console.log('running');
+      if (user) {
+        const docRef = doc(db, "users", user.email);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          setName(docSnap.data().name);
+          setEmail(docSnap.data().email);
+          setSkill(docSnap.data().skillstring);
+          setSkillarr(docSnap.data().skills);
+        } else {
+          console.log("No data!");
+        }
       } else {
         setName(null);
       }
