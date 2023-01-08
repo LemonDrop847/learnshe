@@ -6,15 +6,20 @@ const BlogList = (props) => {
     return ( 
         <div className="blog-list">
             <h1>{title}</h1>
-            {blogs.map((blog)=>(
-                <div className="blog-preview" key={blog.id}>
-                    {blog.iframe}
-                    <h2>{blog.title}</h2>
-                    <p>written by {blog.author} </p>
-                    <p>{blog.description}</p>
-                    {/* <button onClick={()=>handleDelete(blog.id)}>Delete Blog</button> */}
+            <div className="row">
+                <div className="col offset-3">
+                    {blogs.map((blog)=>(
+                    <div className="blog-preview" key={blog.id}>
+                        <iframe src={blog.iframe} width="300px" height="200px" autoplay frameborder="0"></iframe>
+                        <h2>{blog.title}</h2>
+                        <p>written by {blog.author} </p>
+                        <p>{blog.description}</p>
+                        <button>Documentation</button>
+                    </div>
+                    ))}
                 </div>
-            ))}
+            </div>
+            
         </div>
      );
 }
