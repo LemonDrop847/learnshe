@@ -20,6 +20,11 @@ This project aims to:
 
 ## Proposed Solution
 
+This project covers all aspects that need to be emphasised on to minimise the problem:
+- making it easier for them to access resources.
+- an explicit space for women to connect.
+- user can easily apply for jobs in the specific page.
+
 ## Proposed TechStack
 
 <ul>
