@@ -1,6 +1,6 @@
 # LearnSHE
 
-A web dev project that allows women to learn new skills and showcase them through their work. In addition, it provides a medium for women to work for companies, sell products and earn. 
+A web dev project that allows women to learn new skills and showcase them through their work. In addition, it provides a medium for women to work for companies, sell products and earn.
 
 ## Theme
 
@@ -8,14 +8,15 @@ Women empowerment, AI/ML and education.
 
 ## Problem Statement
 
-Women's economic development and empowerment have always been a topic of concern. Despite having the potential and skills, they are not getting a platform to show it to the world. There are less opportunities for women in our country where they both learn and earn. Women's self-sustenance has often been obscured and needs to be focused on more. 
+Women's economic development and empowerment have always been a topic of concern. Despite having the potential and skills, they are not getting a platform to show it to the world. There are less opportunities for women in our country where they both learn and earn. Women's self-sustenance has often been obscured and needs to be focused on more.
 
 ## Objective
 
 This project aims to:
-* Provide a collection of data regarding the skills that users have mentioned.
-* To suggest skill lessons according to users' field of interest using AI/ML.
-* Also provides a set of materials needed for learning a particular skill.
+
+- Provide a collection of data regarding the skills that users have mentioned.
+- To suggest skill lessons according to users' field of interest using AI/ML.
+- Also provides a set of materials needed for learning a particular skill.
 
 ## Proposed Solution
 
@@ -28,6 +29,26 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+<br>
+
+## Some prerequisite commands
+
+To install react-scripts , run this.
+
+### `npm i react-scripts`
+
+To install react-iframes, run this command.
+
+### `npm i react-iframe`
+
+To start the JSON server on your local device. Run this command on new terminal.
+
+### `npx json-server --watch src/components/LearnData/db.json --port 8000`
+
+Runs the server in the development mode.
+Open http://localhost:8000 to view it in your browser.
+
+To start the react app, run this.
 
 ### `npm start`
 
@@ -36,6 +57,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+## Some Extra Commands
 
 ### `npm test`
 
