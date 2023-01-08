@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
             <div className="col-8 offset-1">
               <h1 id="mainh">L<span style={{
-                color:"red"
+                color:"#B54141"
               }}>earn</span>SHE</h1>
             </div>
             <div className="col-1">

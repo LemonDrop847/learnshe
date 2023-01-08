@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import Iframe from 'react-iframe';
+// import Iframe from 'react-iframe';
 const JobList = (props) => {
     const blogs =props.blogs;
     const title=props.title;
