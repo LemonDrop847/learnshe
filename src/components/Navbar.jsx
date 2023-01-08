@@ -82,7 +82,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="col-1">
-              <Link className="links" to="/Jobs">
+              <Link className="links" to="/jobs">
                 Jobs
               </Link>
             </div>

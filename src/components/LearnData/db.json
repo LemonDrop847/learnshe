@@ -52,7 +52,363 @@
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "profile": [
+    {
+      "id": 1,
+      "Jobs": "Frontend Designer",
+      "Skills": "HTML,CSS,JS",
+      "Description": "Apply for the role of frontend developer at XYZ studios bla bla",
+      "Apply Dates": "21 January 2023 - 16 March 2023"
+    },
+    {
+      "id": 2,
+      "Jobs": "Flutter Developer",
+      "Skills": "Flutter,Dart",
+      "Description": "Design and Build sophisticated and highly scalable apps using Flutter. Build custom packages in Flutter using the functionalities and APIs already available in native Android and IOS.",
+      "Apply Dates": "12 Jan 2023 - 12 Feb 2023"
+    },
+    {
+      "id": 3,
+      "Jobs": "UI/UX Designer",
+      "Skills": "Figma,AdobeI",
+      "Description": "looking for a dynamic UI/UX designer who has a passion for designing adaptive",
+      "Apply Dates": "1 Jan 2023 - 15 Jan 2023"
+    },
+    {
+      "id": 4,
+      "Jobs": "Painter",
+      "Skills": "Wall Painting",
+      "Description": "We require painters to work at Ambience Mall",
+      "Apply Dates": "10 Jan 2023 - 30 Jan 2023"
+    },
+    {
+      "id": 5,
+      "Jobs": "Chef",
+      "Skills": "Chinese cuisine",
+      "Description": "Apply for chef at Chung-wan restaurant bla bla bla",
+      "Apply Dates": "15 Jan 2023 - 1 Mar 2023"
+    },
+    {
+      "id": 6,
+      "Jobs": "Clay craftworker",
+      "Skills": "Pottery,Sculpture making",
+      "Description": "Need craftworkers for The-Sculpt organization to make sculptures for different occasions",
+      "Apply Dates": "12 Jan 2023 - 12 Feb 2023"
+    },
+    {
+      "id": 7,
+      "Jobs": "Jute craft workers",
+      "Skills": "Crafting home decor goods",
+      "Description": "",
+      "Apply Dates": ""
+    },
+    {
+      "id": 8,
+      "Jobs": "Artist",
+      "Skills": "Painting,sleeping,eating",
+      "Description": "Can draw anything",
+      "Apply Dates": "31 Jan 2023 - 1 Feb 2023"
+    },
+    {
+      "id": 9,
+      "Jobs": "Youtuber",
+      "Skills": "Video Editing",
+      "Description": "Show different kind of stuffs",
+      "Apply Dates": "15 Aug 2019 - 1 Oct 2020"
+    },
+    {
+      "id": 10,
+      "Jobs": "Transcripter",
+      "Skills": "Transcription",
+      "Description": "Converts audios of videos to text.",
+      "Apply Dates": "2 May 2012- 3 June 2013"
+    },
+    {
+      "id": 11,
+      "Jobs": "Data Scientist",
+      "Skills": "Python,SQL,machine learning,R",
+      "Description": "Analyses data and gives data report.",
+      "Apply Dates": "7 August 2018 - 10 October 2020"
+    },
+    {
+      "id": 12,
+      "Jobs": "Software Engineer",
+      "Skills": "Java,C++,Python,Git",
+      "Description": "A Software Engineer is an IT professional who designs, develops and maintains computer software at a company.",
+      "Apply Dates": "5 May 2015- 5 June 2019"
+    },
+    {
+      "id": 13,
+      "Jobs": "Web Developer",
+      "Skills": "HTML,CSS,JavaScript,React",
+      "Description": "A Web Developer is a professional who is responsible for the design and construction of websites.",
+      "Apply Dates": "4 Feb 2012- 4 June 2014"
+    },
+    {
+      "id": 14,
+      "Jobs": "Product Manager",
+      "Skills": "project management,product development,marketing",
+      "Description": "A product manager is the person who identifies the customer need and the larger business objectives that a product or feature will fulfill, articulates what success looks like for a product, and rallies a team to turn that vision into a reality.",
+      "Apply Dates": "30 May 2011 - 1 August 2015"
+    },
+    {
+      "id": 15,
+      "Jobs": "Marketing Manager",
+      "Skills": "marketing,advertising,social media",
+      "Description": "A marketing manager would undertake market research, understand the trends and customer preferences, create marketing strategy and budgets, oversee the creation of marketing materials and content, and perform all other relevant tasks essential for increasing the business's sales.",
+      "Apply Dates": "25 June 2017- 26 August 2018"
+    },
+    {
+      "id": 16,
+      "Jobs": "Financial Analyst",
+      "Skills": "finance,accounting,data analysis",
+      "Description": "A Financial Analyst helps companies and teams make the most of their finances.",
+      "Apply Dates": "15 July 2023 - 17 September 2023"
+    },
+    {
+      "id": 17,
+      "Jobs": "Data Engineer",
+      "Skills": "Python,SQL,Hadoop,Spark",
+      "Description": "Data engineers work in a variety of settings to build systems that collect, manage, and convert raw data into usable information for data scientists and business analysts to interpret",
+      "Apply Dates": "12 June 2023 - 15 July 2023"
+    },
+    {
+      "id": 18,
+      "Jobs": "DevOps Engineer",
+      "Skills": "Linux,Docker,Kubernetes,AWS",
+      "Description": "They work with developers to deploy and manage code changes, and with operations staff to ensure that systems are up and running smoothly.",
+      "Apply Dates": "22 June 2009 - 22 August 2016"
+    },
+    {
+      "id": 19,
+      "Jobs": "Software Tester",
+      "Skills": "QA,testing,automation",
+      "Description": "A software tester is responsible for designing test scenarios for software usability, running these tests, and preparing reports on the effectiveness",
+      "Apply Dates": "30 May 2023 - 30 July 2023"
+    },
+    {
+      "id": 20,
+      "Jobs": "Human Resources Manager",
+      "Skills": "HR,recruitment,employee relations",
+      "Description": "Planning, coordinating, and supervising the employment of new employees are the responsibilities of HR managers.",
+      "Apply Dates": "15 May 2012 - 15 June 2015"
+    },
+    {
+      "id": 21,
+      "Jobs": "Graphic Designer",
+      "Skills": "Adobe Creative Suite,graphic design,illustration",
+      "Description": "A Graphic Designer, or Graphic Artist, is responsible for creating aesthetically pleasing images that accompany written text.",
+      "Apply Dates": "7 July 2021 - 8 August 2021"
+    },
+    {
+      "id": 22,
+      "Jobs": "Business Analyst",
+      "Skills": "business analysis,data analysis,project management",
+      "Description": "Acting as the key interface between the users and the project manager they gather information, document processes, and confirm the final documents with users.",
+      "Apply Dates": "8 October 2022 - 8 January 2023"
+    },
+    {
+      "id": 23,
+      "Jobs": "Account Manager",
+      "Skills": "sales,customer service,account management",
+      "Description": "An Account Manager is in charge of making sure each department meets the needs of their clients and customers.",
+      "Apply Dates": "7 July 2021 - 5 August 2021"
+    },
+    {
+      "id": 24,
+      "Jobs": "Content Writer",
+      "Skills": "writing,editing,SEO",
+      "Description": "A Content Writer is a professional who writes informative and engaging articles to help brands showcase their products.",
+      "Apply Dates": "6 August 2022 - 6 October 2022"
+    },
+    {
+      "id": 25,
+      "Jobs": "Public Relations Manager",
+      "Skills": "PR,media relations,communication",
+      "Description": "A Public Relations Manager is a professional who is in charge of managing an organization’s communication initiatives with media personnel.",
+      "Apply Dates": "5 Septemeber 2018 - 7 Decemeber 2018"
+    },
+    {
+      "id": 26,
+      "Jobs": "Project Manager",
+      "Skills": "project management,agile,scrum",
+      "Description": "A project manager is accountable for planning and allocating resources, preparing budgets, monitoring progress, and keeping stakeholders informed throughout the project lifecycle.",
+      "Apply Dates": "7 December 2021 - 6 January 2022"
+    },
+    {
+      "id": 27,
+      "Jobs": "Systems Administrator",
+      "Skills": "Linux,Windows,networking",
+      "Description": "System Administrator is a professional who plays an integral role in maintaining organizational policies to ensure the integrity of their network and computer systems.",
+      "Apply Dates": "9 October 2019 - 9 December 2019"
+    },
+    {
+      "id": 28,
+      "Jobs": "QA Tester",
+      "Skills": "testing,bug tracking,automation",
+      "Description": "A QA Tester is a professional who tests the functionality and usability of new or existing software before it goes live to ensure it is bug-free. They work closely with developers, providing them feedback on what needs improvement in order to produce top-quality programs that meet customer expectations.",
+      "Apply Dates": "13 October 2023 - 13 November 2023"
+    },
+    {
+      "id": 29,
+      "Jobs": "Technical Writer",
+      "Skills": "writing,technical documentation,editing",
+      "Description": "Writes and edits technical documents including reference manuals and product manuals.",
+      "Apply Dates": "7 August 2018 - 10 October 2020"
+    },
+    {
+      "id": 30,
+      "Jobs": "Sales Representative",
+      "Skills": "sales,customer service,product knowledge",
+      "Description": "A Sales Representative is a professional who initializes and manages relationships with customers. They serve as their point of contact and lead from initial outreach through the making of the final purchase by them or someone in their household.",
+      "Apply Dates": "5 May 2015- 5 June 2019"
+    },
+    {
+      "id": 31,
+      "Jobs": "Customer Service Representative",
+      "Skills": "customer service,communication,problem solving",
+      "Description": "A customer service representative supports customers by providing helpful information, answering questions, and responding to complaints.",
+      "Apply Dates": "4 Feb 2012- 4 June 2014"
+    },
+    {
+      "id": 32,
+      "Jobs": "IT Manager",
+      "Skills": "IT,project management,team leadership",
+      "Description": "Conducting routine evaluations of network and data security. Locating and seizing chances to enhance and update software and systems.",
+      "Apply Dates": "30 May 2011 - 1 August 2015"
+    },
+    {
+      "id": 33,
+      "Jobs": "Business Development Manager",
+      "Skills": "sales,business development,marketing",
+      "Description": "A Business Development Manager is a professional who is responsible for the growth of their department. They work with their sales team to develop mutually beneficial proposals, negotiate contract terms and communicate effectively with stakeholders.",
+      "Apply Dates": "25 June 2017- 26 August 2018"
+    },
+    {
+      "id": 34,
+      "Jobs": "Marketing Coordinator",
+      "Skills": "marketing,event planning,social media",
+      "Description": "Implements marketing and advertising campaigns by assembling and analyzing sales forecasts; preparing marketing and advertising strategies, plans, and objectives; planning and organizing promotional presentations; and updating calendars.",
+      "Apply Dates": "15 July 2023 - 17 September 2023"
+    },
+    {
+      "id": 35,
+      "Jobs": "Financial Manager",
+      "Skills": "finance,budgeting,accounting",
+      "Description": "A Financial Manager is a professional who is responsible for the financial health of an organization. They create accurate data analysis and advise senior management on profit-maximizing ideas to ensure long-term success.",
+      "Apply Dates": "12 June 2023 - 15 July 2023"
+    },
+    {
+      "id": 36,
+      "Jobs": "Software Developer",
+      "Skills": "Java,C++,Python,JavaScript",
+      "Description": "A Software Developer is a professional who is charged with designing and coding software for businesses and consumers alike. They work closely with clients to determine what they need, then use programming languages like Java or C++ to create programs. They must have critical thinking skills, as well as strong problem-solving abilities.",
+      "Apply Dates": "22 June 2009 - 22 August 2016"
+    },
+    {
+      "id": 37,
+      "Jobs": "Web Designer",
+      "Skills": "HTML,CSS,JavaScript,UX design",
+      "Description": "Web designers use their creative and software engineering/programming skills to design, build and improve websites. They understand user experience and are able to build websites that are easy to understand, navigate, and use, and adhere to design standards and specifications. They are sometimes known as a front-end developer.",
+      "Apply Dates": "30 May 2023 - 30 July 2023"
+    },
+    {
+      "id": 38,
+      "Jobs": "Social Media Manager",
+      "Skills": "social media,marketing,advertising",
+      "Description": "A Social Media Manager is a professional who provides the voice for a company across social channels. They are responsible for responding to comments and creating content. Social Media Managers look for opportunities to increase brand exposure for their assigned company.",
+      "Apply Dates": "15 May 2012 - 15 June 2015"
+    },
+    {
+      "id": 39,
+      "Jobs": "Product Designer",
+      "Skills": "product design,graphic design,user experience",
+      "Description": "A Product Designer is a professional who is in charge of translating the wants and needs of consumers into product design features. They must have a creative eye, be able to think outside the box in order to come up with new ideas or solutions that meet customer expectations, and create digital or print drawings as well as design fully-functional products.",
+      "Apply Dates": "20 March 2013 - 10 April 2016"
+    },
+    {
+      "id": 40,
+      "Jobs": "Technical Support Specialist",
+      "Skills": "technical support,customer service,troubleshooting",
+      "Description": "A Technical Support Specialist is hired by a company to oversee and maintain their computer hardware and software systems. Their skills are an asset to the company, as they aid in resolving technical issues concerning customer's accounts or company software infrastructure.",
+      "Apply Dates": "13 March 2014 - 13 June 2016"
+    },
+    {
+      "id": 41,
+      "Jobs": "Quality Assurance Analyst",
+      "Skills": "QA,testing,automation",
+      "Description": "The Quality Assurance (QA) Analyst will conduct testing on software, websites, and other technical products to identify and resolve bugs, defects, and other potential issues.",
+      "Apply Dates": "22 March 2023 - 23 May 2023"
+    },
+    {
+      "id": 42,
+      "Jobs": "Help Desk Technician",
+      "Skills": "technical support,troubleshooting,customer service",
+      "Description": "A Help Desk Technician, or Support Technician, assists clients with any issues involving their computer hardware, communications software, or computer applications. Their duties include responding to customers, determining the cause of computing issues, and fixing technical problems.",
+      "Apply Dates": "15 April 2023 - 15 June 2023"
+    },
+    {
+      "id": 43,
+      "Jobs": "Content Marketer",
+      "Skills": "content marketing,SEO,social media",
+      "Description": "Content marketing managers increase web traffic and brand awareness through the marketing of content online. They are responsible for creating \"shareable\" content, distributing content on the appropriate platforms and measuring the results of marketing activity.",
+      "Apply Dates": "15 April 2020- 15 June 2021"
+    },
+    {
+      "id": 44,
+      "Jobs": "Public Relations Coordinator",
+      "Skills": "PR,media relations,communication",
+      "Description": "assists with press releases, media coverage, investor relations, and responding to clients' inquiries and concerns",
+      "Apply Dates": "10 March 2023 - 25 March 2023"
+    },
+    {
+      "id": 45,
+      "Jobs": "Human Resources Coordinator",
+      "Skills": "HR,recruitment,employee relations",
+      "Description": "aids with and facilitates the human resource processes at all business locations",
+      "Apply Dates": "15 Jan 2021 - 15 March 2023"
+    },
+    {
+      "id": 46,
+      "Jobs": "Business Development Coordinator",
+      "Skills": "sales,business development,marketing",
+      "Description": "A business development coordinator is responsible for supporting the growth and development of the company",
+      "Apply Dates": "1 Feb 2023 - 1 April 2023"
+    },
+    {
+      "id": 47,
+      "Jobs": "Account Executive",
+      "Skills": "sales,customer service,account management",
+      "Description": "Conducts sales needs analysis with new and prospective customers, including the development of client-centric product solutions",
+      "Apply Dates": "31 Jan 2023 - 31 March 2023"
+    },
+    {
+      "id": 48,
+      "Jobs": "Marketing Analyst",
+      "Skills": "marketing,data analysis,project management",
+      "Description": "interpretes research about the company's consumers and their buying habits",
+      "Apply Dates": "26 Jan 2023 - 1 April 2023"
+    },
+    {
+      "id": 49,
+      "Jobs": "Financial Analyst",
+      "Skills": "finance,accounting,data analysis",
+      "Description": "Be able to evaluate and analyze capital expenditures, depreciation, proposals, investment opportunities, rate of return, profit plans, operating records, financial statements, etc.",
+      "Apply Dates": "18 Jan 2023 - 18 March 2023"
+    },
+    {
+      "id": 50,
+      "Jobs": "Technical Trainer",
+      "Skills": "technical training,instructional design,presentation skills",
+      "Description": "Possess skills such as devising technical training programs according to organizational requirements",
+      "Apply Dates": "20 Jan 2023 - 15 March 2023"
+    },
+    {
+      "id": 51,
+      "Jobs": "IT Support Technician",
+      "Skills": "technical support,troubleshooting,networking",
+      "Description": "Must be good at diagnosing and repairing faults, resolving network issues, and installing and configuring hardware and software.",
+      "Apply Dates": "17 jan 2023 - 28 feb 2023"
+    }
+  ]
 }
